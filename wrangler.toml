@@ -1,3 +1,6 @@
 name = "genesis-mv"
 main = "src/index.js"
-compatibility_date = "2024-01-01"
+compatibility_date = "2023-12-01"
+
+[vars]
+# ここに将来、AIの接続先URLなどを入れます
