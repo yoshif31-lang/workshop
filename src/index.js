@@ -1,0 +1,21 @@
+export default {
+  async fetch(request, env, ctx) {
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET,HEAD,POST,OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    };
+
+    if (request.method === "OPTIONS") {
+      return new Response(null, { headers: corsHeaders });
+    }
+
+    return new Response(JSON.stringify({
+      status: "Online",
+      message: "GENESYS-Core Gateway Active",
+      timestamp: new Date().toISOString()
+    }), {
+      headers: { ...corsHeaders, "Content-Type": "application/json" }
+    });
+  },
+};
