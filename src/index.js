@@ -1,5 +1,3 @@
-// GitHubのRawデータへのパス（yoshif31専用）
-// 1159.pngの「直下」にあるファイルを参照する設定
 const IMG_BASE = "https://raw.githubusercontent.com/yoshif31/workshop/main/";
 
 export default {
@@ -20,13 +18,13 @@ export default {
     </head>
     <body>
         <div id="avatars">
-            <div><div class="avatar-frame"><img src="\${IMG_BASE}nagi.png"></div><div class="label">NAGI</div></div>
-            <div><div class="avatar-frame"><img src="\${IMG_BASE}koku.png"></div><div class="label">KOKU</div></div>
-            <div><div class="avatar-frame"><img src="\${IMG_BASE}hibiki.png"></div><div class="label">HIBIKI</div></div>
-            <div><div class="avatar-frame"><img src="\${IMG_BASE}zero.png"></div><div class="label">ZERO</div></div>
-            <div><div class="avatar-frame"><img src="\${IMG_BASE}luna.png"></div><div class="label">LUNA</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}nagi.png"></div><div class="label">NAGI</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}koku.png"></div><div class="label">KOKU</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}hibiki.png"></div><div class="label">HIBIKI</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}zero.png"></div><div class="label">ZERO</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}luna.png"></div><div class="label">LUNA</div></div>
         </div>
-        <div style="padding:20px;">凪：司令官。画像が表示されない場合は、一度ブラウザの「キャッシュを消去して更新」をお試しください。</div>
+        <div style="padding:20px;">凪：司令官。バックスラッシュを排除し、同期を再確立しました。</div>
     </body>
     </html>`;
     return new Response(html, { headers: { "Content-Type": "text/html; charset=utf-8" } });
