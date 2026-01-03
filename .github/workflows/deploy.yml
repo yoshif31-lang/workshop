@@ -12,6 +12,5 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          secrets: DIFY_API_KEY
-[vars]
-DIFY_API_KEY = ""
+          secrets: |
+            DIFY_API_KEY
