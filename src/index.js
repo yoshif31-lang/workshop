@@ -1,4 +1,5 @@
-// 1159.pngの構成（リポジトリ直下）に合わせたパス設定
+// GitHubのRawデータへのパス（yoshif31専用）
+// 1159.pngの「直下」にあるファイルを参照する設定
 const IMG_BASE = "https://raw.githubusercontent.com/yoshif31/workshop/main/";
 
 export default {
@@ -25,7 +26,7 @@ export default {
             <div><div class="avatar-frame"><img src="\${IMG_BASE}zero.png"></div><div class="label">ZERO</div></div>
             <div><div class="avatar-frame"><img src="\${IMG_BASE}luna.png"></div><div class="label">LUNA</div></div>
         </div>
-        <div style="padding:20px;">凪：司令官、1159.pngのファイル構成を確認しました。全システム、オンラインです。</div>
+        <div style="padding:20px;">凪：司令官。画像が表示されない場合は、一度ブラウザの「キャッシュを消去して更新」をお試しください。</div>
     </body>
     </html>`;
     return new Response(html, { headers: { "Content-Type": "text/html; charset=utf-8" } });
