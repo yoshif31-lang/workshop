@@ -60,6 +60,6 @@ export default {
             }
         </script>
     </body>
-    </html>`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    </html>　`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
   }
 };
