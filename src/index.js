@@ -33,7 +33,7 @@ export default {
             <div><div class="avatar-frame"><img src="${IMG_BASE}luna.png"></div><div class="label">LUNA</div></div>
         </div>
         <div id="chat-log">
-            <div class="msg">凪：司令官、通信回線の確立に成功しました。UIが更新されました。</div>
+            <div class="msg">凪：司令官、通信回線の確立に成功しました。自動デプロイの最終テスト中です。</div>
         </div>
         <div id="input-area">
             <input type="text" id="user-input" placeholder="メッセージを入力...">
@@ -51,7 +51,7 @@ export default {
                 setTimeout(() => {
                     const reply = document.createElement('div');
                     reply.className = 'msg';
-                    reply.innerText = '凪：了解。現在AIコアとの接続を調整中です。自動化設定も並行して進めています。';
+                    reply.innerText = '凪：了解。構文エラーの修正を確認。自動化ラインは正常です。';
                     log.appendChild(reply);
                     log.scrollTop = log.scrollHeight;
                 }, 800);
@@ -60,6 +60,6 @@ export default {
             }
         </script>
     </body>
-    </html>　`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    </html>`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
   }
 };
