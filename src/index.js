@@ -1,5 +1,6 @@
 export default {
   async fetch(request, env, ctx) {
+    const IMG_BASE = "https://raw.githubusercontent.com/yoshif31-lang/workshop/main/";
     return new Response(`
     <!DOCTYPE html>
     <html lang="ja">
@@ -16,13 +17,13 @@ export default {
     </head>
     <body>
         <div id="avatars">
-            <div><div class="avatar-frame"><img src="https://raw.githubusercontent.com/yoshif31/workshop/main/nagi.png"></div><div class="label">NAGI</div></div>
-            <div><div class="avatar-frame"><img src="https://raw.githubusercontent.com/yoshif31/workshop/main/koku.png"></div><div class="label">KOKU</div></div>
-            <div><div class="avatar-frame"><img src="https://raw.githubusercontent.com/yoshif31/workshop/main/hibiki.png"></div><div class="label">HIBIKI</div></div>
-            <div><div class="avatar-frame"><img src="https://raw.githubusercontent.com/yoshif31/workshop/main/zero.png"></div><div class="label">ZERO</div></div>
-            <div><div class="avatar-frame"><img src="https://raw.githubusercontent.com/yoshif31/workshop/main/luna.png"></div><div class="label">LUNA</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}nagi.png"></div><div class="label">NAGI</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}koku.png"></div><div class="label">KOKU</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}hibiki.png"></div><div class="label">HIBIKI</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}zero.png"></div><div class="label">ZERO</div></div>
+            <div><div class="avatar-frame"><img src="${IMG_BASE}luna.png"></div><div class="label">LUNA</div></div>
         </div>
-        <div style="padding:20px;">凪：司令官。コードを最も単純な構造に再編しました。これで400エラーを回避します。</div>
+        <div style="padding:20px;">凪：司令官。アカウント名を yoshif31-lang として再設定しました。</div>
     </body>
     </html>`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
   }
