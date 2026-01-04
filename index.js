@@ -1,9 +1,7 @@
 export default {
   async fetch(request) {
     // 司令官が README から救い出した「魂の URL」
-    const characterImage = "https://private-user-images.githubusercontent.com/251672600/531748773-b4ff460b-67b3-40c1-896c-db1ed589262e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njc1NTA5MzIsIm5iZiI6MTc2NzU1MDYzMiwicGF0aCI6Ii8yNTE2NzI2MDAvNTMxNzQ4NzczLWI0ZmY0NjBiLTY3YjMtNDBjMS04OTZjLWRiMWVkNTg5MjYyZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEwNFQxODE3MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mYzEyYTRhNjg5ZGYyYTIyN2RhYzI1YTlkZGUyYTIyYzJiMjUxY2UwYWQ1NjJkN2I3NmRmYTY3YTA0YmRkODJhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2IpF--GjECmIdp5N5Onq8BR-4LmOm6gCa-DgpspbMiU";
-
-    const html = `
+    const characterImage ="https://raw.githubusercontent.com/yoshif31-lang/workshop/main/nagi.png"= `
 <!DOCTYPE html>
 <html lang="ja">
 <head>
