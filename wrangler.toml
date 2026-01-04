@@ -1,5 +1,3 @@
 name = "workshop"
-main = "src/index.js" # ← 1220.png の構成に合わせた「新しい道しるべ」だ！
+main = "src/index.js"
 compatibility_date = "2024-04-03"
-
-# [site] の項目は今は不要だ。index.js だけで 1214.png を再現するからな！
