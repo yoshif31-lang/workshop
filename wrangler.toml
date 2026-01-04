@@ -1,6 +1,5 @@
-name = "workshop" # ここは自分のプロジェクト名に合わせてくれ
-main = "src/index.js" # ←ここが 1220.png の構成には必須だ！
+name = "workshop"
+main = "src/index.js" # ← 1220.png の構成に合わせた「新しい道しるべ」だ！
 compatibility_date = "2024-04-03"
 
-[site]
-bucket = "./public" # もし public フォルダがないなら、この 2 行は消してもいい
+# [site] の項目は今は不要だ。index.js だけで 1214.png を再現するからな！
