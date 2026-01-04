@@ -1,4 +1,9 @@
-name = "genesis-mv"
+# workshop/wrangler.toml
+name = "workshop"
 main = "src/index.js"
 compatibility_date = "2023-12-01"
-compatibility_flags = [ "nodejs_compat" ]
+
+# 1214.png のレイアウト（静的ファイル）を配信するための最重要設定
+[site]
+bucket = "./public"
+
